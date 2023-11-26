@@ -1,0 +1,378 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F5F7F3;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    line-height: 1.5;   
+}
+
+@media (min-width: 30em) and (max-width: 50em) {
+    
+}
+
+
+/*
+--------------------------------------------------------------------------
+                                    Header
+--------------------------------------------------------------------------
+*/
+header {
+    height: 4.5em;
+    width: 100%;
+    position: sticky; 
+    top: 0px;  
+    z-index: 10;
+    background-color: rgba(245,247,243, 1); 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    height: 100%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none; 
+    font-size: 1.5em;
+    height: 100%;
+    margin-right: 25px;
+}
+
+nav ul li {
+    color: #0E79B2;
+    text-decoration: none;
+    border: 3px solid #0E79B2;
+    border-radius: 25%;
+    padding: 6px;
+    box-shadow: 3px 4px skyblue;
+    font-weight: 200;
+    font-size: 0.8em;
+    background-color: transparent;
+    margin-left: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #0E79B2;
+}
+
+nav ul li:hover, nav a:hover {
+    color: #F5F7F3;
+    background-color: #0E79B2;
+    transition-timing-function: ease-in;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+nav ul li:active, nav a:active {
+    box-shadow: 1px 2px skyblue;
+    transform: translateY(4px);
+    transition: all 0.5s ease;
+}
+
+.titleHeader {
+    color: #0E79B2;
+    letter-spacing: 1.5px;
+    margin-left: 25px;
+    font-size: 1.5em;
+}
+
+.titleHeader:after {
+    content: '';
+    position: absolute;
+    width: 20%;
+    transform: scaleX(0);
+    height: 5px;
+    bottom: 0;
+    left: 0;
+    background-color: #0E79B2;
+    transform-origin: bottom right;
+    transition: all 0.1s ease-out;
+}
+
+.titleHeader:hover:after {
+    color: #0E79B2;
+    letter-spacing: 1.5px;
+    margin-left: 25px;
+    font-size: 1.5em;
+    text-decoration: solid underline overline;
+    transition: all 0.5s ease;
+    transform: scaleX(1);
+    transform-origin: top left;
+} 
+
+/*
+--------------------------------------------------------------------------
+                                    Main
+--------------------------------------------------------------------------
+*/
+
+/* 
+---------------------------
+        Home Section 
+---------------------------
+*/
+
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 40em;
+}
+
+#home img {
+    border-radius: 40%;
+    height: 321px;
+    width: 216px;
+    margin: 40px;
+    padding: 0;
+    align-content: center;
+}
+
+/* 
+---------------------------
+     About Me Section 
+---------------------------
+*/
+
+#aboutMe h3 {
+    font-size: 1.3em;
+    font-weight: 900;
+}
+
+#aboutMe p {
+    width: 60%;
+    font-weight: 100;
+    margin-top: 10px;
+    letter-spacing: 2px;
+}
+
+#aboutMe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0E79B2;
+    color: #F5F7F3;
+    height: 50em;
+}
+
+table {
+    margin-top: 50px;
+    border: 3px solid #F5F7F3;
+    text-align: center;
+}
+
+table td, table th {
+    text-align: center;
+
+    padding: 15px;
+}
+
+.tableHeader {
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.tableSubHeader {
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+    position: relative;
+}
+
+h2 {
+    font-size: 1.2em;
+    font-weight: 200;;
+}
+
+
+/* 
+---------------------------
+      Projects Section 
+---------------------------
+*/
+
+#projects {
+    background-color: #F5F7F3;
+    color: #0E79B2;
+    display: flex;
+    height: 40em;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#projects h3 {
+    font-size: 3em;
+    border: 2px solid #0E79B2;
+    box-shadow: 5px 6px skyblue;
+    padding: 10px;
+}
+
+.project {
+    width: 30%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.eachProject {
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 6px;
+}
+
+.eachProject:hover {
+    background-color: #0E79B2;
+    color: #F5F7F3;
+    border: 2px solid #F5F7F3;
+    opacity: 0.8;
+    box-shadow: 5px 6px skyblue;
+}
+
+/* 
+---------------------------
+     Experience Section 
+---------------------------
+*/
+#experience {
+    background-color: #0E79B2;
+    color: #F5F7F3;
+    display: flex;
+    height: 40em;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#experience h3 {
+    font-size: 3em;
+    border: 2px solid #F5F7F3;
+    box-shadow: 5px 6px skyblue;
+    padding: 10px;
+}
+
+
+.companies {
+    width: 30%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.eachCompany {
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 6px;
+
+}
+
+.eachCompany h4 {
+    font-size: 1.3em;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+.eachCompany h5 {
+    font-size: 1.05em;
+    font-weight: 200;
+
+}
+
+.eachCompany h6 {
+    font-size: 0.96em;
+    font-weight: 200;
+
+}
+
+.eachCompany p {
+    font-size: 0.9em;
+}
+
+.eachCompany:hover {
+    border: 2px solid #F5F7F3;
+    opacity: 0.8;
+    box-shadow: 5px 6px skyblue;
+}
+
+/*
+--------------------------------------------------------------------------
+                                Footer CSS 
+--------------------------------------------------------------------------
+*/
+footer {
+    color: #0E79B2;
+    background-color: #F5F7F3;
+    height: 20em;
+    margin-bottom: 0px;
+    clear: both;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+footer img {
+    height: 30px;
+    padding: 10px;
+}
+
+footer img:hover {
+    opacity: 0.4;
+    transform: scale(1.3);
+}
+
+
+
+/*
+--------------------------------------------------------------------------
+                                Icons CSS 
+--------------------------------------------------------------------------
+*/
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+}
+
+.icons {
+    vertical-align: sub;
+    font-size: 18px;
+}
+
+
+
+.tableIcons {
+    width:18px;
+    vertical-align: middle;
+}
