@@ -49,7 +49,7 @@ homeText.addEventListener("mouseover", (event) => {
 })
 
 homeText.addEventListener("mouseout", (event) => {
-        event.target.style.color ="black";
+
         event.target.style.transform = "scale(1)";
         event.target.style.zIndex = "0";
         // for (let letter in homeText.innerHTML) {
