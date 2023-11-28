@@ -80,29 +80,6 @@ menuButton.addEventListener("click", () => {
         }
 })
 
-homeText.addEventListener("mouseover", (event) => {
-
-        event.target.style.transform = "scale(1.1)";
-
-        event.target.style.transition = "all 0.4s ease-out";
-        
-        // for (let letter in event.target.innerText) {
-        //         letter.style.transform = "scale(1.4)";
-        //                 }
-        // event.target.style.color ="orange";
-        // for (let letter in homeText.innerHTML) {
-        //         letter.style.padding = "3px";
-        // }
-})
-
-homeText.addEventListener("mouseout", (event) => {
-
-        event.target.style.transform = "scale(1)";
-        event.target.style.zIndex = "0";
-        // for (let letter in homeText.innerHTML) {
-        //         letter.style.padding = "3px";
-        // }
-})
 
 
 
