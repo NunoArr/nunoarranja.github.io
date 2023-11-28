@@ -1,17 +1,18 @@
-const homeButton = document.querySelector("#homeButton");
+const homeButton = document.querySelector(".homeButton");
 const body = document.querySelector("body");
-const aboutButton = document.querySelector("#aboutButton");
-const projectsButton = document.querySelector("#projectsButton");
-const experienceButton = document.querySelector("#experienceButton");
-const talkButton = document.querySelector("#talkButton");
+const aboutButton = document.querySelector(".aboutButton");
+const projectsButton = document.querySelector(".projectsButton");
+const experienceButton = document.querySelector(".experienceButton");
+const talkButton = document.querySelector(".talkButton");
 const homeSection = document.querySelector("#home");
 const aboutSection = document.querySelector("#aboutMe");
 const projectsSection = document.querySelector("#projects");
 const experienceSection = document.querySelector("#experience");
 const footerSection = document.querySelector("footer");
+const menuList = document.querySelector(".menuList");
+const menuButton = document.querySelector(".menuButtonSection img");
 
 const homeText = document.querySelector("#home h1");
-
 
 homeButton.addEventListener("click", () => {
         homeSection.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
@@ -31,6 +32,18 @@ experienceButton.addEventListener("click", () => {
 
 talkButton.addEventListener("click", () => {
         footerSection.scrollIntoView({ behavior: "smooth"});
+})
+
+menuButton.addEventListener("click", () => {
+        if (menuList.style.display === "block") {
+                menuList.style.display = "none";
+                menuButton.src = "Images/menu-alt-svgrepo-com.svg";   
+                menuList.style.transition = "all 0.9s ease-out"  
+        } else {
+                menuList.style.display = "block";
+                menuButton.src = "Images/close-square-svgrepo-com.svg";     
+                menuList.style.transition = "all 0.9s ease"  
+        }
 })
 
 homeText.addEventListener("mouseover", (event) => {
@@ -58,7 +71,4 @@ homeText.addEventListener("mouseout", (event) => {
 })
 
 
-window.onscroll = () => {
-        
-}
 
