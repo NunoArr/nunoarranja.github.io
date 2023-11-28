@@ -16,6 +16,7 @@ const body = document.querySelector("body");
 const footerSection = document.querySelector("footer");
 const menuList = document.querySelector(".menuList");
 const menuButton = document.querySelector(".menuButtonSection img");
+const menuButtons = document.querySelectorAll(".menuList ul li");
 
 const homeText = document.querySelector("#home h1");
 
@@ -58,6 +59,14 @@ talkButton.addEventListener("click", () => {
 talkButtonMenu.addEventListener("click", () => {
         footerSection.scrollIntoView({ behavior: "smooth"});
 })
+
+menuButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+                menuList.style.display = "none";
+                menuButton.src = "Images/menu-alt-svgrepo-com.svg"; 
+        }) 
+})
+
 
 menuButton.addEventListener("click", () => {
         if (menuList.style.display === "block") {
